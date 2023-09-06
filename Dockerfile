@@ -4,7 +4,7 @@ COPY hello.swift /src/
 
 WORKDIR /src/
 
-RUN swiftc -static-executable hello.swift -o hello
+RUN [ "/usr/bin/swiftc", "-static-executable", "hello.swift", "-o", "hello" ]
 
 
 
