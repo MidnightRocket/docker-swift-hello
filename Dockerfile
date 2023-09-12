@@ -12,4 +12,4 @@ FROM scratch AS deploy
 
 COPY --from=build /src/hello /hello
 
-CMD ["/hello"]
+ENTRYPOINT ["/hello"]
